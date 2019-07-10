@@ -58,6 +58,7 @@ class LoginForm extends React.Component {
             </Form.Item>
             <Form.Item>
               {getFieldDecorator('account', {
+                initialValue: "admin",
                 rules: [
                   { required: true, message: '请输入账号' }
                 ],
@@ -67,6 +68,7 @@ class LoginForm extends React.Component {
             </Form.Item>
             <Form.Item>
               {getFieldDecorator('password', {
+                initialValue: "admin",
                 rules: [{ required: true, message: '请输入密码' }],
               })(
                 <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="密码" />
