@@ -50,7 +50,7 @@ class LoginForm extends React.Component {
         <div className="form-box">
           <div className="title">
             <img alt="logo" src={process.env.PUBLIC_URL + "/logo.png"} />
-            <span>运维值班平台</span>
+            <span>运维工单系统</span>
           </div>
           <Form onSubmit={this.handleSubmit} className="form">
             <Form.Item className="form-title">

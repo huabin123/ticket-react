@@ -91,7 +91,7 @@ class ILayout extends React.Component {
         >
           <div className="logo" >
             <img alt="logo" src={process.env.PUBLIC_URL + '/logo.png'} />
-            {this.state.collapsed ? "" : <b>运维值班平台</b>}
+            {this.state.collapsed ? "" : <b>运维工单系统</b>}
           </div>
           <Menu theme="dark" mode="inline" selectedKeys={[selectedKeys]}>
             {this.renderMenu(menuList)}
@@ -134,7 +134,7 @@ class ILayout extends React.Component {
             {this.props.children}
           </Content>
           <Footer style={{ textAlign: 'center' }}>
-            <p>运维值班平台 @ 2019</p>
+            <p>运维工单系统 @ 2019</p>
           </Footer>
         </Layout>
       </Layout>
